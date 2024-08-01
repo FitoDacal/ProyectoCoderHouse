@@ -1,0 +1,663 @@
+@media screen and (max-width:1750px) {
+    /* CARRERA */
+
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+        width: 230px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta .frente img {
+        height: 120px;
+    }
+
+    /* PREMIOS INDIVIDUALES */
+
+    .main-premios section {
+        display: block;
+    }
+
+    .main-premios section aside {
+        display: none;
+    }
+
+    .main-premios section .secciones-premios-trofeos {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0;
+        justify-content: space-evenly;
+    }
+}
+
+
+@media screen and (max-width: 1630px) {
+    /* INDEX */
+
+    main .section-index .section-index-frase {
+        margin-top: 0;
+    }
+
+    main .section-index .section-index-frase p {
+        font-size: 2.1875rem;
+    }
+
+    /* CARRERA */
+
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta  {
+        width: 210px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta .frente img {
+        height: 100px;
+    }
+
+
+    main .secciones-carrera .secciones-carrera-container-club img {
+        height: 350px;
+    }
+}
+
+
+@media screen and (max-width: 1525px) {
+    /* CARRERA */
+
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+        width: 190px;
+        height: 200px;
+    }
+
+    /* RECORDS */
+
+    .main-records section ul li {
+        font-size: 16px;
+    }
+}
+
+
+
+@media screen and (max-width: 1475px) {
+    /* INDEX */
+
+    h1 {
+        font-size: 5.3125rem;
+    }
+
+    main .section-index .section-index-frase p{
+        font-size: 1.875rem;
+    }
+
+    /* RECORDS */
+
+    .main-records {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-records section {
+        flex-grow: 1;
+    }
+
+    .main-records section ul {
+        overflow-y: scroll;
+        scroll-snap-type: y mandatory;
+    }
+
+    .main-records section ul li {
+        font-size: 15px;
+    }
+
+    .main-records section {
+        justify-content: center;
+    }
+    
+    .main-records section ul {
+        display: none;
+        margin: 0;
+    }
+    
+    .main-records section .container-records-none {
+        display: flex;
+        align-items: center;
+        margin: 0;
+
+        text-align: center;
+    }
+
+    /* CONTACTO */
+
+    .main-contacto section {
+        grid-template-columns: 1fr;
+    }
+
+    .main-contacto section .display-none {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 1370px) {
+    /* INDEX */
+
+    main .section-index .section-index-subtitulo {
+        margin-bottom: 0;
+    }
+
+    main .section-index .section-index-subtitulo a h2 {
+        font-size: 3.75rem;
+    }
+
+    main .section-index .section-index-frase {
+        margin-bottom: 1.875rem;
+    }
+
+    /* CARRERA */
+
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+        width: 170px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta div h3 {
+        font-size: 14px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-club img {
+        height: 300px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-club h2 {
+        font-size: 40px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-estadisticas ul li {
+        font-size: 25px;
+    }
+}
+
+
+
+@media screen and (max-width: 1295px) {
+    /* INDEX */
+
+    h1 {
+        font-size: 5rem;
+    }
+
+    main .section-index .section-index-frase p{
+        font-size: 1.5625rem;
+    }
+
+    /* CARRERA */
+
+    main .secciones-carrera {
+        height: min-content;
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 2fr 1fr;
+        grid-template-areas: 
+        "club"
+        "trofeos"
+        "estadisticas";
+    }
+
+
+    main .secciones-carrera .secciones-carrera-container-trofeos {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+        margin: 10px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-club {
+        padding: 15px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-estadisticas {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-estadisticas ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-estadisticas ul li {
+        width: 100%;
+    }
+}
+
+
+@media screen and (max-width: 1259px) {
+    /* PREMIOS INDIVIDUALES */
+
+    .main-premios section .secciones-premios-trofeos .carta {
+        width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    /* INDEX */
+
+    main .section-index {
+        padding-top: 6.25rem;
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 1.5fr 1.5fr;
+        grid-template-areas:
+        "titulo"
+        "imagenes"
+        "frase";
+    }
+
+    main .section-index .section-index-frase {
+        margin: 1.875rem 0 0 0;
+    }
+
+    main .section-index .section-index-aside {
+        display: none;
+    }
+
+    /* FOOTER */
+
+    footer div ul {
+        flex-direction: column;
+    }
+
+    footer div .footer-redes {
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (max-width: 1159px) {
+    /* PREMIOS INDIVIDUALES */
+
+    .main-premios section .secciones-premios-trofeos .carta {
+        height: 200px;
+    }
+}
+
+
+
+@media screen and (max-width: 950px) {
+    /* RECORDS */
+
+    .main-records section ul li {
+        font-size: 12px;
+    }
+}
+
+
+
+@media screen and (max-width: 900px) {
+    h1 {
+        font-size: 60px;
+    }
+    
+    /* FOOTER */
+
+    footer {
+        height: 37.5rem;
+
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30% 30% 30% 10%;
+        grid-template-areas: 
+        "ad" 
+        "contacto" 
+        "redes"
+        "copy";
+    }
+    
+    footer div {
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+
+    footer div ul {
+        padding-top: 10px;
+        flex-direction: row;
+    }
+}
+
+@media screen and (max-width:815px) {
+    /* INDEX */
+
+    main .section-index {
+        padding: 60px 60px 30px 60px ;
+    }
+
+    main .section-index .section-index-frase p {
+        font-size: 20px;
+        line-height: 50px;
+    }
+
+    main .section-index .section-index-imagenes {
+        justify-content: center;
+    }
+
+    main .section-index .section-index-imagenes img {
+        width: 80%;
+    }
+
+    main .section-index .section-index-imagenes .section-index-imagenes-none {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width:745px) {
+    /* RECORDS */
+
+    .main-records section ul {
+        margin: 30px 0;
+    }
+}
+
+@media screen and (max-width: 659px) {
+    /* CARRERA */
+
+    main .seccion-barca , main .seccion-arg {
+        grid-template-rows: 1fr 2fr 0.5fr;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-club img {
+        height: 250px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-club h2 {
+        font-size: 30px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-estadisticas {
+        flex-wrap: nowrap;
+        justify-content: space-evenly;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-estadisticas ul {
+        width: auto;
+        display: block;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-estadisticas ul li {
+        width: auto;
+    }
+}
+
+
+@media screen and (max-width:608px) {
+    .main-contacto section div h2 {
+        font-size: 20px;
+    }
+
+    .main-contacto section div p {
+        font-size: 14px;
+    }
+}
+
+
+
+@media screen and (max-width: 605px) {
+    /* INDEX */
+
+    main .section-index .section-index-subtitulo a h2 {
+        text-shadow: .0625rem .0625rem .0625rem $color-secundario,
+        2px 2px .0625rem $color-secundario,
+        2px 3px .0625rem $color-secundario,
+        3px 4px .0625rem $color-secundario,
+        3px 5px .0625rem $color-secundario,
+        4px 6px .0625rem $color-secundario;
+    }
+
+    main .section-index .section-index-subtitulo a h2:hover {
+        text-shadow: .0625rem .0625rem .0625rem $color-principal,
+        2px 2px .0625rem $color-principal,
+        2px 3px .0625rem $color-principal,
+        3px 4px .0625rem $color-principal,
+        3px 5px .0625rem $color-principal,
+        4px 6px .0625rem $color-principal;
+    }
+    
+    main .section-index .section-index-frase p {
+        text-shadow: .0625rem .0625rem 0 $color-principal;
+    }
+}
+
+
+
+
+@media screen and (max-width:562px) {
+    /* INDEX */
+
+    h1 {
+        text-shadow: 1px 1px 1px $color-principal,
+        2px 2px 1px $color-principal,
+        2px 3px 1px $color-principal,
+        3px 4px 1px $color-principal,
+        3px 5px 1px $color-principal,
+        4px 6px 1px $color-principal,
+        10px 13px 6px rgba(255,255,255,0.4);
+    }
+    
+    main .section-index-subtitulo a h2 {
+        font-size: 50px;
+    }
+    
+    main .section-index .section-index-frase p {
+        font-size: 16px;
+    }
+    
+    main .section-index .section-index-imagenes img {
+        width: 100%;
+    }
+} 
+
+
+
+@media screen and (max-width: 500px) {
+    /* INDEX */
+
+    h1 {
+        font-size: 50px;
+        
+        text-shadow: 1px 1px 1px $color-principal,
+        2px 2px 1px $color-principal,
+        2px 3px 1px $color-principal,
+        3px 4px 1px $color-principal,
+        3px 5px 1px $color-principal,
+        4px 6px 1px $color-principal,
+        10px 13px 6px rgba(255,255,255,0.4);
+    }
+
+    main .section-index {
+        padding: 60px 30px 30px 30px;
+    }
+    
+    main .section-index .section-index-subtitulo a h2 {
+        font-size: 40px;
+    }
+
+    main .section-index .section-index-frase p {
+        font-size: 16px;
+        line-height: 40px;
+    }
+
+    .bordes-animados {
+        border-radius: 15px;
+        border: 2px solid $blanco;
+        box-shadow: 0 0 .375rem nth($color-shadow, 5),
+        0 0 .4375rem nth($color-shadow, 5),
+        0 0 .5rem nth($color-shadow, 5);
+    
+        transition: 0.5s;
+    }
+    
+    .bordes-animados:hover {
+        border: 2px solid $color-principal;
+        box-shadow: 0 0 .375rem $color-principal,
+        0 0 .4375rem $color-principal,
+        0 0 .5rem $color-principal;
+        
+        transform: scale(1.01);
+        transition: 0.5s;
+    }
+    
+    /* RECORDS */
+    
+    .main-records section {
+        padding: 30px;
+    }
+
+    /* FOOTER */
+    
+    footer div ul {
+        flex-direction: column;
+    }
+    
+    footer div ul li a {
+        font-size: 20px;
+    }
+}
+
+
+@media screen and (max-width: 499px) {
+    /* PREMIOS INDIVIDUALES */
+
+    .main-premios section .secciones-premios-trofeos .carta {
+        width: 150px;
+    }
+
+    .main-premios section .secciones-premios-trofeos .carta .frente h2 {
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width:469px) {
+    /* CARRERA */
+
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+        width: 150px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta div h3 {
+        font-size: 12px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta div ul li {
+        font-size: 10px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-estadisticas ul li {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:435px) {
+    /* CARRERA */
+
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+        width: 130px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-club h2 {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width:400px) {
+    /* INDEX */
+
+    h1 {
+        font-size: 45px;
+
+        text-shadow: 1px 1px 1px $color-principal,
+        2px 2px 1px $color-principal,
+        2px 3px 1px $color-principal,
+        3px 4px 1px $color-principal,
+        3px 5px 1px $color-principal,
+        4px 6px 1px $color-principal,
+    7px 9px 6px rgba(255,255,255,0.4);
+    }
+
+    main .section-index .section-index-subtitulo a h2 {
+        font-size: 32px;
+    }
+
+    main .section-index .section-index-frase p {
+        font-size: 12px;
+    }
+
+    main .section-index .section-index-imagenes {
+        flex-direction: column;
+    }
+
+    main .section-index .section-index-imagenes img {
+        margin: 15px;
+    }
+
+    main .section-index .section-index-imagenes .section-index-imagenes-none {
+        display: block;
+    }
+
+    /* PREMIOS INDIVIDUALES */
+
+    .main-premios section .secciones-premios-trofeos .carta {
+        width: 130px;
+    }
+
+    /* FOOTER */
+
+    footer p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:389px) {
+
+    /* CARRERA */
+
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+        width: 110px;
+    }
+    
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta .frente img {
+        height: 90px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-club img {
+        height: 200px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-club h2 {
+        font-size: 20px;
+    }
+
+    main .secciones-carrera .secciones-carrera-container-estadisticas ul li {
+        font-size: 15px;
+    }
+
+    /* CONTACTO */
+
+    .main-contacto section div form div {
+        font-size: 14px;
+    }
+
+}
+
+@media screen and (max-width:359px) {
+    
+    /* PREMIOS INDIVIDUALES */
+
+    .main-premios section .secciones-premios-trofeos .carta {
+        width: 110px;
+    }
+
+    .main-premios section .secciones-premios-trofeos .carta .atras ul li {
+        font-size: 10px;
+    }
+}

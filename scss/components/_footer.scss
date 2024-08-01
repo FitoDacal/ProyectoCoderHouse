@@ -1,0 +1,73 @@
+footer {
+    background-color: $color-principal;
+    color: $blanco;
+
+    height: 25rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: 
+    "ad contacto redes"
+    "copy copy copy";
+
+    div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        h3 {
+            font-weight: 800;
+        }
+
+        ul {
+            height: 9.375rem;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+        
+            padding-top: 3.125rem;
+
+            li {
+                padding: .625rem;
+
+                a {
+                    font-size: 1.5625rem;
+                    color: nth($color-contacto, 1);
+                
+                    transition: .15s;
+
+                    &:hover {
+                        color: $blanco;
+
+                        transition: .15s;
+                    }
+                }
+
+                .footer-mail {
+                    text-transform: lowercase;
+                }
+            }
+        }
+
+        .footer-redes {
+
+            li {
+
+                a {
+                    font-size: 3.125rem;
+                }
+            }
+        }
+    }
+
+    p {
+        grid-area: copy;
+        justify-self: center;
+        align-self: center;
+    
+        text-transform: none;
+    }
+}

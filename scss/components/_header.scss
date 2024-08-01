@@ -1,0 +1,17 @@
+.hero {
+    height: 100vh;
+
+    background-image: url(../img/index/background/fondo-header.png);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+header {
+
+    nav {
+        height: 3.75rem;
+        background-color: $color-principal;
+    }
+}

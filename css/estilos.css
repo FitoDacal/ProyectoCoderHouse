@@ -1,0 +1,862 @@
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+main .secciones-carrera .secciones-carrera-container-trofeos .carta, .main-premios section .secciones-premios-trofeos .carta {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  box-shadow: none; }
+
+main .secciones-carrera .secciones-carrera-container-trofeos .carta div, .main-premios section .secciones-premios-trofeos .carta div {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  overflow: hidden;
+  transition: 1s; }
+
+main .secciones-carrera .secciones-carrera-container-trofeos .carta .atras, .main-premios section .secciones-premios-trofeos .carta .atras {
+  transform: perspective(600px) rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; }
+
+main .secciones-carrera .secciones-carrera-container-trofeos .carta .atras ul, .main-premios section .secciones-premios-trofeos .carta .atras ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: uppercase;
+  list-style-type: none;
+  text-decoration: none; }
+
+/* BODY */
+body {
+  font-family: "Inter", sans-serif;
+  background-color: #004c99; }
+
+h1 {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding-top: 5rem;
+  font-weight: 900;
+  font-size: 6.25rem;
+  color: #ffffff;
+  text-shadow: 0.0625rem 0.0625rem 0.0625rem #73acdf, 0.125rem 0.125rem 0.0625rem #73acdf, 0.125rem 0.1875rem 0.0625rem #73acdf, 0.1875rem 0.25rem 0.0625rem #73acdf, 0.1875rem 0.3125rem 0.0625rem #73acdf, 0.25rem 0.375rem 0.0625rem #73acdf, 0.25rem 0.4375rem 0.0625rem #73acdf, 0.3125rem 0.5rem 0.0625rem #73acdf, 0.3125rem 0.5625rem 0.0625rem #73acdf, 0.375rem 0.625rem 0.0625rem #73acdf, 0.625rem 0.8125rem 0.375rem rgba(255, 255, 255, 0.4), 0.625rem 1.0625rem 0.625rem rgba(255, 255, 255, 0.2);
+  text-align: center; }
+
+.bordes-animados {
+  border-radius: 15px;
+  border: 0.3125rem solid #ffffff;
+  box-shadow: 0 0 0.375rem #ffffff8e, 0 0 0.4375rem #ffffff8e, 0 0 0.5rem #ffffff8e, 0 0 0.5625rem #ffffff8e, 0 0 0.625rem #ffffff8e;
+  transition: 0.5s; }
+
+.bordes-animados:hover {
+  border: 0.3125rem solid #73acdf;
+  box-shadow: 0 0 0.375rem #73acdf, 0 0 0.4375rem #73acdf, 0 0 0.5rem #73acdf, 0 0 0.5625rem #73acdf, 0 0 0.625rem #73acdf;
+  transform: scale(1.01); }
+
+/* PISAR BOOTSTRAP */
+h2, h3, h4, p {
+  margin: 0; }
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+.navbar-brand {
+  padding-left: 1.5rem;
+  font-weight: 500; }
+
+header nav div div ul li {
+  font-weight: 600; }
+
+.nav-link:hover {
+  color: #ffffff; }
+
+.navbar-toggler {
+  border: none; }
+
+.navbar-toggler:focus {
+  box-shadow: none; }
+
+.navbar-toggler-icon:hover {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"); }
+
+.offcanvas {
+  background-color: #73acdf; }
+
+.offcanvas-header {
+  color: #ffffff; }
+
+.btn-close:hover {
+  box-shadow: none; }
+
+.btn-close {
+  filter: invert(1); }
+
+.hero {
+  height: 100vh;
+  background-image: url(../img/index/background/fondo-header.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; }
+
+header nav {
+  height: 3.75rem;
+  background-color: #73acdf; }
+
+main .section-index {
+  height: 100vh;
+  padding: 3.75rem 3.75rem 1.875rem 3.75rem;
+  background-image: url(../PreEntrega1AdolfoDacal/img/index/background/fondo-sectioncarrera.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr;
+  grid-template-areas: "titulo titulo" "imagenes aside" "frase aside"; }
+  main .section-index .section-index-subtitulo {
+    grid-area: titulo;
+    margin-bottom: 1.875rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .section-index .section-index-subtitulo a h2 {
+      justify-self: start;
+      margin-bottom: 1.25rem;
+      font-weight: 800;
+      font-size: 4.375rem;
+      color: #ffffff;
+      text-shadow: 1px 1px 1px #004c99, 0.125rem 0.125rem 1px #004c99, 0.125rem 0.1875rem 1px #004c99, 0.1875rem 0.25rem 1px #004c99, 0.1875rem 0.3125rem 1px #004c99, 0.25rem 0.375rem 1px #004c99, 0.25rem 0.4375rem 1px #004c99, 0.3125rem 0.5rem 1px #004c99, 0.3125rem 0.5625rem 1px #004c99, 0.375rem 0.625rem 1px #004c99;
+      transition: 0.5s; }
+      main .section-index .section-index-subtitulo a h2:hover {
+        text-shadow: 1px 1px 1px #73acdf, 0.125rem 0.125rem 1px #73acdf, 0.125rem 0.1875rem 1px #73acdf, 0.1875rem 0.25rem 1px #73acdf, 0.1875rem 0.3125rem 1px #73acdf, 0.25rem 0.375rem 1px #73acdf, 0.25rem 0.4375rem 1px #73acdf, 0.3125rem 0.5rem 1px #73acdf, 0.3125rem 0.5625rem 1px #73acdf, 0.375rem 0.625rem 1px #73acdf; }
+  main .section-index .section-index-imagenes {
+    grid-area: imagenes;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    main .section-index .section-index-imagenes img {
+      width: 48%; }
+  main .section-index .section-index-frase {
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: fit-content;
+    margin-top: 1.875rem;
+    text-align: center;
+    grid-area: frase;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .section-index .section-index-frase p {
+      font-size: 2.1875rem;
+      font-weight: 900;
+      line-height: 3.75rem;
+      padding: 1.5625rem;
+      color: #ffffff;
+      text-shadow: 0.0625rem 0.0625rem 0 #73acdf, 0.125rem 0.125rem 0 #73acdf; }
+  main .section-index .section-index-aside {
+    grid-area: aside;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    main .section-index .section-index-aside img {
+      max-height: 100%;
+      max-width: 80%; }
+
+main .section-carrera {
+  background-image: url(../img/index/background/fondo-sectioncarrera.jpg); }
+
+main .section-premios {
+  background-image: url(../img/index/background/fondo-sectionpremios.jpg);
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr;
+  grid-template-areas: "titulo titulo" "aside imagenes" "aside frase"; }
+
+main .section-records {
+  background-image: url(../img/index/background/fondo-sectionrecords.jpg); }
+
+main .secciones-carrera {
+  height: calc(100vh - 5.625rem);
+  margin: 3.75rem 1.875rem 1.875rem 1.875rem;
+  border-radius: .9375rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "trofeos club estadisticas"; }
+  main .secciones-carrera .secciones-carrera-container-trofeos {
+    grid-area: trofeos;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    justify-items: center;
+    padding: .9375rem; }
+    main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+      height: 13.75rem;
+      width: 15.625rem; }
+      main .secciones-carrera .secciones-carrera-container-trofeos .carta div {
+        border-radius: 15px; }
+        main .secciones-carrera .secciones-carrera-container-trofeos .carta div:hover {
+          transition: 1s; }
+        main .secciones-carrera .secciones-carrera-container-trofeos .carta div h4 {
+          padding: 10px; }
+      main .secciones-carrera .secciones-carrera-container-trofeos .carta .frente {
+        transform: perspective(600px) rotateY(0deg); }
+        main .secciones-carrera .secciones-carrera-container-trofeos .carta .frente img {
+          position: absolute;
+          height: 8.75rem;
+          top: 62%;
+          left: 50%;
+          transform: translate(-50%, -50%); }
+        main .secciones-carrera .secciones-carrera-container-trofeos .carta .frente h3 {
+          font-size: 16px;
+          padding: 10px;
+          font-size: 1rem;
+          font-weight: 700;
+          position: absolute;
+          width: 100%;
+          text-align: center; }
+      main .secciones-carrera .secciones-carrera-container-trofeos .carta .atras {
+        border: 0.1875rem solid #ffffff;
+        box-shadow: 0 0 0.375rem #ffffff8e, 0 0 0.4375rem #ffffff8e; }
+        main .secciones-carrera .secciones-carrera-container-trofeos .carta .atras ul {
+          font-size: 14px;
+          font-weight: 600;
+          margin: 10px; }
+          main .secciones-carrera .secciones-carrera-container-trofeos .carta .atras ul li {
+            padding: 2px; }
+      main .secciones-carrera .secciones-carrera-container-trofeos .carta:hover .frente {
+        transform: perspective(600px) rotateY(180deg); }
+      main .secciones-carrera .secciones-carrera-container-trofeos .carta:hover .atras {
+        transform: perspective(600px) rotateY(360deg); }
+  main .secciones-carrera .secciones-carrera-container-club {
+    grid-area: club;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+    main .secciones-carrera .secciones-carrera-container-club img {
+      height: 25rem; }
+    main .secciones-carrera .secciones-carrera-container-club h2 {
+      font-weight: 800;
+      font-size: 3.125rem; }
+  main .secciones-carrera .secciones-carrera-container-estadisticas {
+    grid-area: estadisticas;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 2.1875rem;
+    text-align: center; }
+    main .secciones-carrera .secciones-carrera-container-estadisticas ul {
+      padding: .625rem; }
+      main .secciones-carrera .secciones-carrera-container-estadisticas ul li {
+        padding: .3125rem; }
+
+main .seccion-barca {
+  background-color: #a50044;
+  color: #edbb00; }
+  main .seccion-barca .secciones-carrera-container-trofeos .carta div {
+    border: 0.1875rem solid #edbb00;
+    box-shadow: 0 0 0.375rem #edbb008e, 0 0 0.4375rem #edbb008e; }
+
+main .seccion-psg {
+  background-color: #004170;
+  color: #ceab5d; }
+  main .seccion-psg .secciones-carrera-container-trofeos .carta {
+    grid-row: span 3; }
+    main .seccion-psg .secciones-carrera-container-trofeos .carta div {
+      border: 0.1875rem solid #ceab5d;
+      box-shadow: 0 0 0.375rem #ceab5d8e, 0 0 0.4375rem #ceab5d8e; }
+
+main .seccion-inter {
+  background-color: #f6b4cd; }
+  main .seccion-inter .secciones-carrera-container-trofeos .carta {
+    grid-column: span 2;
+    grid-row: span 3; }
+    main .seccion-inter .secciones-carrera-container-trofeos .carta div {
+      border: 0.1875rem solid #000000;
+      box-shadow: 0 0 0.375rem #0000008e, 0 0 0.4375rem #0000008e; }
+
+main .seccion-arg {
+  background-color: #73acdf;
+  color: #004c99; }
+  main .seccion-arg .secciones-carrera-container-trofeos .carta div {
+    border: 0.1875rem solid #004c99;
+    box-shadow: 0 0 0.375rem #004c998e, 0 0 0.4375rem #0000008e; }
+  main .seccion-arg .secciones-carrera-container-trofeos .carta:nth-child(5) {
+    grid-column: span 2; }
+
+.main-premios {
+  height: 100vh;
+  background-image: url(../img/premios/fondo.jpeg);
+  background-size: cover;
+  background-position: top center;
+  background-attachment: fixed;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory; }
+  .main-premios section {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "imagen premios";
+    align-items: center;
+    padding: 1.875rem; }
+    .main-premios section aside {
+      grid-area: imagen; }
+      .main-premios section aside img {
+        width: 100%; }
+    .main-premios section .secciones-premios-trofeos {
+      grid-area: premios;
+      text-align: center;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      align-items: center;
+      justify-items: center;
+      height: 100%;
+      padding-left: .9375rem; }
+      .main-premios section .secciones-premios-trofeos .carta {
+        color: #ffffff;
+        height: 12.5rem;
+        width: 13.75rem;
+        margin: .625rem;
+        border-radius: 25px; }
+        .main-premios section .secciones-premios-trofeos .carta div {
+          border-radius: 25px;
+          border: 0.1875rem solid #ffffff;
+          box-shadow: 0 0 0.375rem #ffffff8e, 0 0 0.4375rem #ffffff8e; }
+          .main-premios section .secciones-premios-trofeos .carta div:hover {
+            transition: 1s; }
+          .main-premios section .secciones-premios-trofeos .carta div h3 {
+            padding: 10px; }
+        .main-premios section .secciones-premios-trofeos .carta .frente {
+          transform: perspective(600px) rotateY(0deg);
+          background-color: rgba(0, 0, 0, 0.4); }
+          .main-premios section .secciones-premios-trofeos .carta .frente img {
+            position: absolute;
+            height: 90px;
+            top: 62%;
+            left: 50%;
+            transform: translate(-50%, -50%); }
+          .main-premios section .secciones-premios-trofeos .carta .frente h2 {
+            font-size: 15px;
+            padding: 10px 15px;
+            font-weight: 700;
+            position: absolute;
+            width: 100%;
+            text-align: center; }
+        .main-premios section .secciones-premios-trofeos .carta .atras {
+          background-color: #ffbb008e;
+          border: 0.1875rem solid #ffbb00;
+          box-shadow: 0 0 0.375rem #ffbb008e, 0 0 0.4375rem #ffbb008e; }
+          .main-premios section .secciones-premios-trofeos .carta .atras ul {
+            font-size: 12px;
+            font-weight: 600;
+            margin: 10px; }
+            .main-premios section .secciones-premios-trofeos .carta .atras ul li {
+              padding: 2px; }
+        .main-premios section .secciones-premios-trofeos .carta:hover .frente {
+          transform: perspective(600px) rotateY(180deg); }
+        .main-premios section .secciones-premios-trofeos .carta:hover .atras {
+          transform: perspective(600px) rotateY(360deg); }
+
+.main-records {
+  height: 100vh;
+  background-image: url(../img/records/fondo.jpeg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed; }
+  .main-records section {
+    height: calc(100vh - 12.5rem);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.875rem;
+    font-weight: 600;
+    font-size: 1.0625rem; }
+    .main-records section ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: #ffffff;
+      height: 100%;
+      margin: 0 1.875rem;
+      padding: .625rem;
+      text-align: center; }
+      .main-records section ul li {
+        padding: .9375rem; }
+    .main-records section .container-records-none {
+      display: none; }
+
+.main-contacto {
+  height: 100vh;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column; }
+  .main-contacto section {
+    flex-grow: 1;
+    padding: 1.875rem;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr;
+    grid-template-rows: 1fr;
+    text-align: center; }
+    .main-contacto section div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center; }
+      .main-contacto section div h2 {
+        font-weight: 800;
+        margin-bottom: 1.875rem; }
+      .main-contacto section div a {
+        color: #ffffff8c;
+        margin-bottom: .9375rem;
+        font-weight: 600;
+        font-size: 1.25rem;
+        text-transform: lowercase;
+        transition: .15s; }
+        .main-contacto section div a:hover {
+          color: #ffffff;
+          transition: .15s; }
+      .main-contacto section div p {
+        font-weight: 600;
+        margin: 1rem; }
+      .main-contacto section div .container-contacto-icono {
+        font-size: 3.125rem; }
+      .main-contacto section div form {
+        background-color: #ffffff;
+        margin: .9375rem 0px;
+        width: 100%;
+        border-radius: .625rem;
+        box-shadow: 0rem 0rem 0.625rem #ffffff; }
+        .main-contacto section div form div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          padding: .9375rem; }
+          .main-contacto section div form div .form-enviar {
+            width: auto;
+            background-color: #73acdf;
+            color: #ffffff;
+            border: none; }
+            .main-contacto section div form div .form-enviar:hover {
+              transform: scale(1.02); }
+        .main-contacto section div form input {
+          width: 100%;
+          background-color: #ededed;
+          border: none;
+          border-left: 0.3125rem solid #73acdf;
+          border-radius: .3125rem;
+          padding: .3125rem .625rem;
+          text-transform: none; }
+        .main-contacto section div form textarea {
+          width: 100%;
+          background-color: #ededed;
+          border: none;
+          border-left: 0.3125rem solid #73acdf;
+          border-radius: .3125rem;
+          padding: .3125rem .625rem;
+          text-transform: none; }
+
+footer {
+  background-color: #73acdf;
+  color: #ffffff;
+  height: 25rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 90% 10%;
+  grid-template-areas: "ad contacto redes" "copy copy copy"; }
+  footer div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; }
+    footer div h3 {
+      font-weight: 800; }
+    footer div ul {
+      height: 9.375rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      padding-top: 3.125rem; }
+      footer div ul li {
+        padding: .625rem; }
+        footer div ul li a {
+          font-size: 1.5625rem;
+          color: #ffffff8c;
+          transition: .15s; }
+          footer div ul li a:hover {
+            color: #ffffff;
+            transition: .15s; }
+        footer div ul li .footer-mail {
+          text-transform: lowercase; }
+    footer div .footer-redes li a {
+      font-size: 3.125rem; }
+  footer p {
+    grid-area: copy;
+    justify-self: center;
+    align-self: center;
+    text-transform: none; }
+
+@media screen and (max-width: 1750px) {
+  /* CARRERA */
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+    width: 230px; }
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta .frente img {
+    height: 120px; }
+  /* PREMIOS INDIVIDUALES */
+  .main-premios section {
+    display: block; }
+  .main-premios section aside {
+    display: none; }
+  .main-premios section .secciones-premios-trofeos {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: space-evenly; } }
+
+@media screen and (max-width: 1630px) {
+  /* INDEX */
+  main .section-index .section-index-frase {
+    margin-top: 0; }
+  main .section-index .section-index-frase p {
+    font-size: 2.1875rem; }
+  /* CARRERA */
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+    width: 210px; }
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta .frente img {
+    height: 100px; }
+  main .secciones-carrera .secciones-carrera-container-club img {
+    height: 350px; } }
+
+@media screen and (max-width: 1525px) {
+  /* CARRERA */
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+    width: 190px;
+    height: 200px; }
+  /* RECORDS */
+  .main-records section ul li {
+    font-size: 16px; } }
+
+@media screen and (max-width: 1475px) {
+  /* INDEX */
+  h1 {
+    font-size: 5.3125rem; }
+  main .section-index .section-index-frase p {
+    font-size: 1.875rem; }
+  /* RECORDS */
+  .main-records {
+    display: flex;
+    flex-direction: column; }
+  .main-records section {
+    flex-grow: 1; }
+  .main-records section ul {
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory; }
+  .main-records section ul li {
+    font-size: 15px; }
+  .main-records section {
+    justify-content: center; }
+  .main-records section ul {
+    display: none;
+    margin: 0; }
+  .main-records section .container-records-none {
+    display: flex;
+    align-items: center;
+    margin: 0;
+    text-align: center; }
+  /* CONTACTO */
+  .main-contacto section {
+    grid-template-columns: 1fr; }
+  .main-contacto section .display-none {
+    display: none; } }
+
+@media screen and (max-width: 1370px) {
+  /* INDEX */
+  main .section-index .section-index-subtitulo {
+    margin-bottom: 0; }
+  main .section-index .section-index-subtitulo a h2 {
+    font-size: 3.75rem; }
+  main .section-index .section-index-frase {
+    margin-bottom: 1.875rem; }
+  /* CARRERA */
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+    width: 170px; }
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta div h3 {
+    font-size: 14px; }
+  main .secciones-carrera .secciones-carrera-container-club img {
+    height: 300px; }
+  main .secciones-carrera .secciones-carrera-container-club h2 {
+    font-size: 40px; }
+  main .secciones-carrera .secciones-carrera-container-estadisticas ul li {
+    font-size: 25px; } }
+
+@media screen and (max-width: 1295px) {
+  /* INDEX */
+  h1 {
+    font-size: 5rem; }
+  main .section-index .section-index-frase p {
+    font-size: 1.5625rem; }
+  /* CARRERA */
+  main .secciones-carrera {
+    height: min-content;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 2fr 1fr;
+    grid-template-areas: "club" "trofeos" "estadisticas"; }
+  main .secciones-carrera .secciones-carrera-container-trofeos {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly; }
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+    margin: 10px; }
+  main .secciones-carrera .secciones-carrera-container-club {
+    padding: 15px; }
+  main .secciones-carrera .secciones-carrera-container-estadisticas {
+    display: flex;
+    flex-wrap: wrap; }
+  main .secciones-carrera .secciones-carrera-container-estadisticas ul {
+    width: 100%;
+    display: flex;
+    justify-content: center; }
+  main .secciones-carrera .secciones-carrera-container-estadisticas ul li {
+    width: 100%; } }
+
+@media screen and (max-width: 1259px) {
+  /* PREMIOS INDIVIDUALES */
+  .main-premios section .secciones-premios-trofeos .carta {
+    width: 200px; } }
+
+@media screen and (max-width: 1200px) {
+  /* INDEX */
+  main .section-index {
+    padding-top: 6.25rem;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1.5fr 1.5fr;
+    grid-template-areas: "titulo" "imagenes" "frase"; }
+  main .section-index .section-index-frase {
+    margin: 1.875rem 0 0 0; }
+  main .section-index .section-index-aside {
+    display: none; }
+  /* FOOTER */
+  footer div ul {
+    flex-direction: column; }
+  footer div .footer-redes {
+    flex-direction: row; } }
+
+@media screen and (max-width: 1159px) {
+  /* PREMIOS INDIVIDUALES */
+  .main-premios section .secciones-premios-trofeos .carta {
+    height: 200px; } }
+
+@media screen and (max-width: 950px) {
+  /* RECORDS */
+  .main-records section ul li {
+    font-size: 12px; } }
+
+@media screen and (max-width: 900px) {
+  h1 {
+    font-size: 60px; }
+  /* FOOTER */
+  footer {
+    height: 37.5rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30% 30% 30% 10%;
+    grid-template-areas: "ad"  "contacto"  "redes" "copy"; }
+  footer div {
+    padding-top: 15px;
+    padding-bottom: 15px; }
+  footer div ul {
+    padding-top: 10px;
+    flex-direction: row; } }
+
+@media screen and (max-width: 815px) {
+  /* INDEX */
+  main .section-index {
+    padding: 60px 60px 30px 60px; }
+  main .section-index .section-index-frase p {
+    font-size: 20px;
+    line-height: 50px; }
+  main .section-index .section-index-imagenes {
+    justify-content: center; }
+  main .section-index .section-index-imagenes img {
+    width: 80%; }
+  main .section-index .section-index-imagenes .section-index-imagenes-none {
+    display: none; } }
+
+@media screen and (max-width: 745px) {
+  /* RECORDS */
+  .main-records section ul {
+    margin: 30px 0; } }
+
+@media screen and (max-width: 659px) {
+  /* CARRERA */
+  main .seccion-barca, main .seccion-arg {
+    grid-template-rows: 1fr 2fr 0.5fr; }
+  main .secciones-carrera .secciones-carrera-container-club img {
+    height: 250px; }
+  main .secciones-carrera .secciones-carrera-container-club h2 {
+    font-size: 30px; }
+  main .secciones-carrera .secciones-carrera-container-estadisticas {
+    flex-wrap: nowrap;
+    justify-content: space-evenly; }
+  main .secciones-carrera .secciones-carrera-container-estadisticas ul {
+    width: auto;
+    display: block; }
+  main .secciones-carrera .secciones-carrera-container-estadisticas ul li {
+    width: auto; } }
+
+@media screen and (max-width: 608px) {
+  .main-contacto section div h2 {
+    font-size: 20px; }
+  .main-contacto section div p {
+    font-size: 14px; } }
+
+@media screen and (max-width: 605px) {
+  /* INDEX */
+  main .section-index .section-index-subtitulo a h2 {
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #004c99, 2px 2px 0.0625rem #004c99, 2px 3px 0.0625rem #004c99, 3px 4px 0.0625rem #004c99, 3px 5px 0.0625rem #004c99, 4px 6px 0.0625rem #004c99; }
+  main .section-index .section-index-subtitulo a h2:hover {
+    text-shadow: 0.0625rem 0.0625rem 0.0625rem #73acdf, 2px 2px 0.0625rem #73acdf, 2px 3px 0.0625rem #73acdf, 3px 4px 0.0625rem #73acdf, 3px 5px 0.0625rem #73acdf, 4px 6px 0.0625rem #73acdf; }
+  main .section-index .section-index-frase p {
+    text-shadow: 0.0625rem 0.0625rem 0 #73acdf; } }
+
+@media screen and (max-width: 562px) {
+  /* INDEX */
+  h1 {
+    text-shadow: 1px 1px 1px #73acdf, 2px 2px 1px #73acdf, 2px 3px 1px #73acdf, 3px 4px 1px #73acdf, 3px 5px 1px #73acdf, 4px 6px 1px #73acdf, 10px 13px 6px rgba(255, 255, 255, 0.4); }
+  main .section-index-subtitulo a h2 {
+    font-size: 50px; }
+  main .section-index .section-index-frase p {
+    font-size: 16px; }
+  main .section-index .section-index-imagenes img {
+    width: 100%; } }
+
+@media screen and (max-width: 500px) {
+  /* INDEX */
+  h1 {
+    font-size: 50px;
+    text-shadow: 1px 1px 1px #73acdf, 2px 2px 1px #73acdf, 2px 3px 1px #73acdf, 3px 4px 1px #73acdf, 3px 5px 1px #73acdf, 4px 6px 1px #73acdf, 10px 13px 6px rgba(255, 255, 255, 0.4); }
+  main .section-index {
+    padding: 60px 30px 30px 30px; }
+  main .section-index .section-index-subtitulo a h2 {
+    font-size: 40px; }
+  main .section-index .section-index-frase p {
+    font-size: 16px;
+    line-height: 40px; }
+  .bordes-animados {
+    border-radius: 15px;
+    border: 2px solid #ffffff;
+    box-shadow: 0 0 0.375rem #ffffff8e, 0 0 0.4375rem #ffffff8e, 0 0 0.5rem #ffffff8e;
+    transition: 0.5s; }
+  .bordes-animados:hover {
+    border: 2px solid #73acdf;
+    box-shadow: 0 0 0.375rem #73acdf, 0 0 0.4375rem #73acdf, 0 0 0.5rem #73acdf;
+    transform: scale(1.01);
+    transition: 0.5s; }
+  /* RECORDS */
+  .main-records section {
+    padding: 30px; }
+  /* FOOTER */
+  footer div ul {
+    flex-direction: column; }
+  footer div ul li a {
+    font-size: 20px; } }
+
+@media screen and (max-width: 499px) {
+  /* PREMIOS INDIVIDUALES */
+  .main-premios section .secciones-premios-trofeos .carta {
+    width: 150px; }
+  .main-premios section .secciones-premios-trofeos .carta .frente h2 {
+    font-size: 12px; } }
+
+@media screen and (max-width: 469px) {
+  /* CARRERA */
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+    width: 150px; }
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta div h3 {
+    font-size: 12px; }
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta div ul li {
+    font-size: 10px; }
+  main .secciones-carrera .secciones-carrera-container-estadisticas ul li {
+    font-size: 20px; } }
+
+@media screen and (max-width: 435px) {
+  /* CARRERA */
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+    width: 130px; }
+  main .secciones-carrera .secciones-carrera-container-club h2 {
+    font-size: 25px; } }
+
+@media screen and (max-width: 400px) {
+  /* INDEX */
+  h1 {
+    font-size: 45px;
+    text-shadow: 1px 1px 1px #73acdf, 2px 2px 1px #73acdf, 2px 3px 1px #73acdf, 3px 4px 1px #73acdf, 3px 5px 1px #73acdf, 4px 6px 1px #73acdf, 7px 9px 6px rgba(255, 255, 255, 0.4); }
+  main .section-index .section-index-subtitulo a h2 {
+    font-size: 32px; }
+  main .section-index .section-index-frase p {
+    font-size: 12px; }
+  main .section-index .section-index-imagenes {
+    flex-direction: column; }
+  main .section-index .section-index-imagenes img {
+    margin: 15px; }
+  main .section-index .section-index-imagenes .section-index-imagenes-none {
+    display: block; }
+  /* PREMIOS INDIVIDUALES */
+  .main-premios section .secciones-premios-trofeos .carta {
+    width: 130px; }
+  /* FOOTER */
+  footer p {
+    font-size: 12px; } }
+
+@media screen and (max-width: 389px) {
+  /* CARRERA */
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta {
+    width: 110px; }
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta .frente img {
+    height: 90px; }
+  main .secciones-carrera .secciones-carrera-container-club img {
+    height: 200px; }
+  main .secciones-carrera .secciones-carrera-container-club h2 {
+    font-size: 20px; }
+  main .secciones-carrera .secciones-carrera-container-estadisticas ul li {
+    font-size: 15px; }
+  /* CONTACTO */
+  .main-contacto section div form div {
+    font-size: 14px; } }
+
+@media screen and (max-width: 359px) {
+  /* PREMIOS INDIVIDUALES */
+  .main-premios section .secciones-premios-trofeos .carta {
+    width: 110px; }
+  .main-premios section .secciones-premios-trofeos .carta .atras ul li {
+    font-size: 10px; } }
