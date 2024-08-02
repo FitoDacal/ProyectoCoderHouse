@@ -609,7 +609,7 @@ footer {
   /* CARRERA */
   main .secciones-carrera .secciones-carrera-container-trofeos .carta {
     width: 170px; }
-  main .secciones-carrera .secciones-carrera-container-trofeos .carta div h3 {
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta .frente h3 {
     font-size: 14px; }
   main .secciones-carrera .secciones-carrera-container-club img {
     height: 300px; }
@@ -802,7 +802,7 @@ footer {
   /* CARRERA */
   main .secciones-carrera .secciones-carrera-container-trofeos .carta {
     width: 150px; }
-  main .secciones-carrera .secciones-carrera-container-trofeos .carta div h3 {
+  main .secciones-carrera .secciones-carrera-container-trofeos .carta .frente h3 {
     font-size: 12px; }
   main .secciones-carrera .secciones-carrera-container-trofeos .carta div ul li {
     font-size: 10px; }
