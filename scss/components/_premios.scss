@@ -60,7 +60,7 @@
 
                 .frente {
                     transform: perspective(600px) rotateY(0deg);
-                    background-color: rgba(0, 0, 0, 0.400);
+                    background-color: rgba(0, 0, 0, 0.600);
 
                     img {
                         position: absolute;
@@ -84,7 +84,7 @@
 
                 .atras {
                     @extend %carta-atras;
-                    background-color: nth($color-premios, 2);
+                    background-color: rgba(0, 0, 0, 0.600);
                     border: 0.1875rem solid nth($color-premios, 1);
                     box-shadow: 0 0 .375rem nth($color-premios, 2),
                     0 0 .4375rem nth($color-premios, 2);
